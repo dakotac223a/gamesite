@@ -1,0 +1,250 @@
+​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+}
+
+/* Navigation Styling */
+#nav {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+#nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+#nav a:hover {
+    color: #ffd700;
+}
+
+/* Game Container Base Styling */
+.game-container {
+    width: 600px;
+    height: 400px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border: none;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.game-container.active {
+    display: flex;
+    transform: scale(1.02);
+}
+
+/* Score and High Score */
+#score, #high-score {
+    font-size: 28px;
+    color: #ffd700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin: 15px;
+}
+
+/* Buttons */
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+.share-btn {
+    background: #1DA1F2;
+    margin: 20px;
+}
+
+.share-btn:hover {
+    background: #0d8bf0;
+}
+
+/* Game-Specific Styling */
+#color-clash {
+    background: linear-gradient(to bottom right, #ffecd2, #fcb69f);
+}
+
+#color-clash .tile {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+#color-clash .tile:hover {
+    transform: scale(1.1);
+}
+
+#word-dash {
+    background: linear-gradient(to bottom right, #d4fc79, #96e6a1);
+}
+
+#word-dash #wd-word {
+    font-size: 40px;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#word-dash input {
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+#timer-bar {
+    background: #e0e0e0;
+    border-radius: 10px;
+}
+
+#timer-progress {
+    background: #4CAF50;
+    border-radius: 10px;
+}
+
+#pixel-painter {
+    background: linear-gradient(to bottom right, #a1c4fd, #c2e9fb);
+}
+
+#pixel-painter #pp-grid div {
+    border-radius: 5px;
+    transition: background 0.2s ease;
+}
+
+#number-rush {
+    background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+}
+
+#number-rush .number {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    color: #333;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#shape-shifter {
+    background: linear-gradient(to bottom right, #d4a5a5, #f4c4c4);
+}
+
+#shape-shifter .shape {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.2s ease;
+}
+
+#shape-shifter .shape:hover {
+    transform: rotate(15deg);
+}
+
+#echo-tap {
+    background: linear-gradient(to bottom right, #84fab0, #8fd3f4);
+}
+
+#echo-tap .echo-dot {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#gravity-switch {
+    background: linear-gradient(to bottom right, #667eea, #764ba2);
+}
+
+#gravity-switch .ball {
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#word-weaver {
+    background: linear-gradient(to bottom right, #f6d365, #fda085);
+}
+
+#word-weaver .letter {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#line-runner {
+    background: linear-gradient(to bottom right, #fbc2eb, #a6c1ee);
+}
+
+#line-runner canvas {
+    border-radius: 10px;
+}
+
+#tile-flip {
+    background: linear-gradient(to bottom right, #ffcccb, #ffb6c1);
+}
+
+#tile-flip .tile-flip {
+    border-radius: 5px;
+    transition: background 0.2s ease;
+}
+
+#soundwave {
+    background: linear-gradient(to bottom right, #43e97b, #38f9d7);
+}
+
+#soundwave .enemy {
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#block-breaker {
+    background: linear-gradient(to bottom right, #fa709a, #fee140);
+}
+
+#block-breaker canvas {
+    border-radius: 10px;
+}
+
+/* Ad Container */
+#ad-container {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
